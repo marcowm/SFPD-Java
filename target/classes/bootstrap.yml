@@ -1,0 +1,64 @@
+#spring:
+#  profiles.active: homologacao
+#  cloud.config:
+#    name: "mapeador-risco-webservice"
+#    username: ${spring.security.user.name}
+#    password: ${spring.security.user.password}
+#    discovery:
+#      enabled: true
+#      sfpd.service-id: configuration-server
+#    fail-fast: true
+#  main.allow-bean-definition-overriding: true
+#  security.user:
+#    name: risco
+#    password: 1626364656
+#  aop:
+#    auto: true
+#    proxy-target-class: false
+#
+#
+#eureka:
+#  instance.hostname: ${HOST_NAME}
+#  client:
+#    sfpd.service-url.defaultZone: ${EUREKA_URI:https://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:8761/eureka/}
+#
+#---
+#
+#spring:
+#  profiles: homologacao
+#  cloud.config:
+#    label: homolog
+#
+#---
+#
+#spring:
+#  profiles: local
+#  cloud.config:
+#    label: homolog
+#
+#server:
+#  ssl.enabled: false
+#
+#eureka:
+#  instance:
+#    nonSecurePortEnable: true
+#    securePortEnabled: false
+spring:
+  application:
+    name: sfpd
+
+management:
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: [ "health","prometheus", "metrics" ]
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+    prometheus:
+      enabled: true
+server:
+  port: 8080
