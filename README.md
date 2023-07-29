@@ -22,14 +22,15 @@
 ### Pré-requisitos
 
 #### Para a execução do MySQL
-* MySQL version xxx
+* MySQL Database
 
 #### Para execução dos serviços em Java
 
 * Java 8
 * Maven
 * Spring Boot
-* 
+* Prometheus ( prometheus - version - 2.45.0 )
+* ActiveMQ ( apache-activemq - version - 5.16.5 )
 
 ### Instalação
 
