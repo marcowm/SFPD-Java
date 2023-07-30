@@ -9,9 +9,7 @@
 ## Sobre o projeto
 > Este repositório conta com o script SQL para criação e população do esquema relacional do banco de dados SFPD, assim como o código fonte da API para interação com o banco de dados e demais serviços.
 
-### Colaboradores
-
-### Ferramentas usadas
+### Ferramentas utilizadas
 * VSCODE
 * IntelliJ IDEA
 * ActiveMQ
@@ -35,44 +33,34 @@
 ### Instalação
 
 1. Clone o repositório
-	`git clone https://github.com/jsvitor/medical-clinic`
+	`git clone https://github.com/marcowm/SFPD-Java.git`
 
 	Você terá a seguinte estrutura de diretórios:
 
-
 ```
       .
-      ├── data-base-scripts
-      │   ├── clinica-medica-creation.sql
-      │   └── clinica-medica-populate.sql
-      ├── rest-service
-      │   ├── src
-      │   │    ├── config
-      │   │    ├── controllers
-      │   │    ├── doctorControllers
-      │   │    |   ├── ...
-      │   │    |   └── index.ts
-      │   │    ├── routes          # rotas da aplicação
-      │   │    │   ├── doctor.routes.ts
-      │   │    │   ├── ...
-      │   │    │   └── index.ts
-      |   │    └── server.ts
-      │   ├── .editorconfig
-      │   ├── .eslintignore
-      │   ├── .eslintrc.json
-      │   ├── .gitattributes
-      │   ├── .gitignore
-      │   ├── README.md
-      │   ├── .package.json
-      │   ├── tsconfig.json
-      │   └── yarn.lock
+      ├── database
+      │   ├── script.sql
       │
-      ├── web-interface             # SPA interface
-      │   ├── index.ts
-      │   ├── README.MD             # Getting started guide
-      │   ├── src             
-      │   └── ...                 
-      └── ...
+      ├── src
+      │   ├── main
+      |   |    ├── java/sfpd
+      |   │    │    ├── configs
+      |   │    │    ├── controller
+      |   │    │    ├── dto
+      │   │    |    ├── enums
+      │   │    |    ├── exceptions
+      |   │    │    ├── listener
+      │   │    │    ├── modelo
+      │   │    │    ├── pojo
+      │   │    │    ├── repository
+      |   |    │    ├── service
+      |   |    │    ├── utils
+      │   |    ├── resources
+      │   ├── pom.xml
+      │   ├── README.md
+      │   └── ...
+      │
 ```
 
 
