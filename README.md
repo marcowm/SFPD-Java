@@ -26,7 +26,7 @@
 
 * Java 8
 * Maven
-* Spring Boot
+* Spring Boot ( version 2.4.3 utilizada no exemplo )
 * Prometheus ( prometheus - version - 2.45.0 )
 * ActiveMQ ( apache-activemq - version - 5.16.5 )
 
