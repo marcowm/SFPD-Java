@@ -71,7 +71,7 @@
 		`mysql start via linha de comando ou podendo também fazer uso de uma interface gráfica como o Mysql Workbench`
 	* Execute o serviço do ActiveMq para gerenciar a criação e uso de filas:
 		`para o exemplo demonstrado foram criadas 2 filas com o nome "fila1" e "fila2" `
-	* Execute o serviço do Prometheus(Opcional) para gerenciar as métricas estipuladas:
+	* Execute o serviço do Prometheus(Opcional) para gerenciar as métricas estipuladas
 
 	Agora basta executar o projeto java em uma IDE como o Intellij idea ou Eclipse para ter a API Rest funcionando no endereço `http://localhost:8080`
 
